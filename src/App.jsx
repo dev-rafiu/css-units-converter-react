@@ -40,7 +40,8 @@ function Converter() {
 
   return (
     <main className="main">
-      <h2>Css Units Converter</h2>
+      <h2>Css Unit Converter</h2>
+
       <div className="container">
         <Input scale="px" unit={pixel} onUnitChange={handlePxChange} />
         <Input scale="rem" unit={rem} onUnitChange={handleRemChange} />

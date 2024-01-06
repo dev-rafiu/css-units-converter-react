@@ -32,10 +32,8 @@ body {
   gap: 1rem;
 }
 
-fieldset {
-  border-radius: 4px;
-  width: 100%;
-  margin: 0 auto;
+label .unit {
+  font-weight: bold;
 }
 
 input {

@@ -12,10 +12,18 @@ function UnitInput({ scale, unit, onUnitChange }) {
   };
 
   return (
-    <fieldset>
-      <legend>Enter unit in {scaleNames[scale]}</legend>
-      <input type="number" value={unit} onChange={handleChange} />
-    </fieldset>
+    <>
+      <label htmlFor={scaleNames[scale]}>
+        Enter value in <span className="unit">{scaleNames[scale]}</span>
+      </label>
+
+      <input
+        type="number"
+        value={unit}
+        onChange={handleChange}
+        id={scaleNames[scale]}
+      />
+    </>
   );
 }
 
